@@ -25,60 +25,13 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-        /* ===== LOADER DOUX ET LENT ===== */
 
-        #cephas {
-            position: fixed;
-            inset: 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.8s ease;
-        }
-
-        .logo-loader {
-            width: 85px;
-            animation: softBounce 2s ease-in-out forwards;
-        }
-
-        /* Animation lente et naturelle */
-        @keyframes softBounce {
-            0% {
-                transform: translateY(-60px);
-                opacity: 0;
-            }
-
-            35% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            55% {
-                transform: translateY(-20px);
-            }
-
-            75% {
-                transform: translateY(0);
-            }
-
-            90% {
-                transform: translateY(-8px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./images/pic1.png" alt=""
+            <a class="navbar-brand" href="index.html"><img src="images/pic1.png" alt=""
                     style="width: 36px; object-fit: cover" />
                 GS Good shepherd <br /><small> / Kanzana</small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -431,24 +384,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- loader -->
-    <div id="cephas" class="fullscreen show">
-        <img src="images/pic1.png" alt="Logo" class="logo-loader" />
-    </div>
-
-    <script>
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                const loader = document.getElementById("cephas");
-                loader.style.opacity = "0";
-
-                setTimeout(function () {
-                    loader.style.display = "none";
-                }, 800);
-            }, 2000);
-        });
-    </script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
