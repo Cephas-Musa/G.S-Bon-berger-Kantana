@@ -12047,8 +12047,10 @@ textarea.form-control {
 }
 @media (max-width: 480px) {
   .ftco-freeTrial .btn-join {
-    width: 120px;
-    margin-bottom: -220px;
+    /* flex-direction: column; */
+  }
+  .your{
+    flex-direction: column;
   }
 }
 .sidebar-wrap .fields .select-wrap {
