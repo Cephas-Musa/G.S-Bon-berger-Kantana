@@ -1,934 +1,1225 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <title>GS Good shepherd</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>GS Good shepherd</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./images/pic1.png" />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
 
-  <link rel="icon" type="image/png" href="./images/pic1.png">
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
-  <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
 
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
 
-  <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
 
-  <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-  <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* ===== LOADER DOUX ET LENT ===== */
 
-  <link rel="stylesheet" href="css/flaticon.css" />
-  <link rel="stylesheet" href="css/icomoon.css" />
-  <link rel="stylesheet" href="css/style.css" />
-      <style>
-        /* ===== LOADER DOUX ET LENT ===== */
+      #cephas {
+        position: fixed;
+        inset: 0;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.8s ease;
+      }
 
-        #cephas {
-            position: fixed;
-            inset: 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.8s ease;
+      .logo-loader {
+        width: 85px;
+        animation: softBounce 2s ease-in-out forwards;
+      }
+
+      /* Animation lente et naturelle */
+      @keyframes softBounce {
+        0% {
+          transform: translateY(-60px);
+          opacity: 0;
         }
 
-        .logo-loader {
-            width: 85px;
-            animation: softBounce 2s ease-in-out forwards;
+        35% {
+          transform: translateY(0);
+          opacity: 1;
         }
 
-        /* Animation lente et naturelle */
-        @keyframes softBounce {
-            0% {
-                transform: translateY(-60px);
-                opacity: 0;
-            }
-
-            35% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            55% {
-                transform: translateY(-20px);
-            }
-
-            75% {
-                transform: translateY(0);
-            }
-
-            90% {
-                transform: translateY(-8px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
+        55% {
+          transform: translateY(-20px);
         }
+
+        75% {
+          transform: translateY(0);
+        }
+
+        90% {
+          transform: translateY(-8px);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+      /* Responsive Map */
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 0;
+        position: relative;
+        height: 450px;
+      }
+
+      .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .map-responsive {
+          height: 300px;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="./images/pic1.png" alt=""
-          style="width: 36px; object-fit: cover" />
-        GS Good shepherd <br /><small> / Kanzana</small></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Programs</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Parteners</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">News & Events</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item cta">
-            <a href="#" class="nav-link"><span>Apply</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- END nav -->
-
-  <div class="hero-wrap" style="
-        background-image: url(images/course-1.jpg);
-        obj
-        background-attachment: fixed;
-      ">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-        <div class="col-md-8 ftco-animate text-center">
-          <h1 class="mb-4">
-            Building Character, Knowledge and Excellence for the Future
-          </h1>
-          <div class="flex flex-col items-center gap-4 md:flex-row md:gap-0">
-            <a href="#" class="btn btn-primary px-4 py-2 my-3">Apply for Admission</a>
-            <a href="#" class="btn btn-secondary px-4 py-2">Explore Our Programs</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="ftco-search-course">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="courseSearch-wrap d-md-flex flex-column-reverse">
-            <div class="full-wrap d-flex ftco-animate">
-              <div class="one-third order-last p-5">
-                <span>Looking for a specific level?</span>
-                <h3>Find Your Educational Path</h3>
-                <form action="#" class="course-search-form">
-                  <div class="form-group d-flex rounded">
-                    <input type="text" class="form-control" placeholder="Search Nursery, Primary or Secondary level" />
-                    <input type="submit" value="Search" class="submit" style="border-radius: 0px;" />
-                  </div>
-                </form>
-                <p>
-                  Just Browsing? <a href="#"> View all academic levels</a>
-                </p>
-              </div>
-              <div class="one-forth order-first img" style="background-image: url(images/image_1.jpg)"></div>
-            </div>
-            <div class="full-wrap ftco-animate">
-              <div class="one-half">
-                <div class="featured-blog d-md-flex">
-                  <div class="image d-flex order-last">
-                    <a href="#" class="img" style="background: url(images/image_2.jpg)"></a>
-                  </div>
-                  <div class="text order-first">
-                    <span class="date">January 15, 2026</span>
-                    <h3>
-                      <a href="#">Annual Academic Excellence Workshop</a>
-                    </h3>
-                    <p>
-                      Groupe Scolaire Good shepherd Kanzana organized its annual
-                      academic workshop to strengthen teaching strategies and
-                      student performance across all levels.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services p-3 py-4 d-block text-center">
-            <div class="icon d-flex justify-content-center align-items-center mb-3">
-              <span class="flaticon-exam"></span>
-            </div>
-            <div class="media-body px-3">
-              <h3 class="heading">Admission</h3>
-              <p>
-                Transparent and structured admission process for Nursery,
-                Primary and Secondary levels. We ensure equal opportunity and
-                academic integrity.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services p-3 py-4 d-block text-center">
-            <div class="icon d-flex justify-content-center align-items-center mb-3">
-              <span class="flaticon-blackboard"></span>
-            </div>
-            <div class="media-body px-3">
-              <h3 class="heading">Notice Board</h3>
-              <p>
-                Stay updated with official announcements, examination
-                schedules, academic calendars and important school
-                communications.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services p-3 py-4 d-block text-center">
-            <div class="icon d-flex justify-content-center align-items-center mb-3">
-              <span class="flaticon-books"></span>
-            </div>
-            <div class="media-body px-3">
-              <h3 class="heading">Our Library</h3>
-              <p>
-                A growing academic library supporting research, reading
-                culture and intellectual development for all students.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg)">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row d-md-flex justify-content-center">
-        <div class="col-md-9 about-video text-center">
-          <h2 class="ftco-animate">
-            Groupe Scolaire Good shepherd Kanzana – Shaping Responsible Leaders
-          </h2>
-          <div class="video d-flex justify-content-center">
-            <a href="#" class="button popup-vimeo d-flex justify-content-center align-items-center"><span
-                class="ion-ios-play"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="ftco-counter bg-light" id="section-counter">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18 text-center">
-                <div class="text">
-                  <strong class="number" data-number="10300">0</strong>
-                  <span>Enrolled Students</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18 text-center">
-                <div class="text">
-                  <strong class="number" data-number="7896">0</strong>
-                  <span>Graduated Students</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18 text-center">
-                <div class="text">
-                  <strong class="number" data-number="400">0</strong>
-                  <span>Qualified Teachers</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18 text-center">
-                <div class="text">
-                  <strong class="number" data-number="200">0</strong>
-                  <span>Academic Levels</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section testimony-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">What Our Student Says</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 ftco-animate">
-          <div class="carousel-testimony owl-carousel">
-            <div class="item">
-              <div class="testimony-wrap text-center">
-                <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                  <span class="quote d-flex align-items-center justify-content-center">
-                    <i class="icon-quote-left"></i>
-                  </span>
-                </div>
-                <div class="text">
-                  <p class="mb-5">
-                    Groupe Scolaire Good shepherd Kanzana has helped me grow
-                    academically and morally. The teachers are dedicated and
-                    the learning environment encourages excellence and
-                    discipline.
-                  </p>
-                  <p class="name">Emmanuel N.</p>
-                  <span class="position">Primary Student</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-wrap text-center">
-                <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
-                  <span class="quote d-flex align-items-center justify-content-center">
-                    <i class="icon-quote-left"></i>
-                  </span>
-                </div>
-                <div class="text">
-                  <p class="mb-5">
-                    Groupe Scolaire Good shepherd Kanzana has helped me grow
-                    academically and morally. The teachers are dedicated and
-                    the learning environment encourages excellence and
-                    discipline.
-                  </p>
-                  <p class="name">Dennis G.</p>
-                  <span class="position">Secondary Student</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-wrap text-center">
-                <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
-                  <span class="quote d-flex align-items-center justify-content-center">
-                    <i class="icon-quote-left"></i>
-                  </span>
-                </div>
-                <div class="text">
-                  <p class="mb-5">
-                    Groupe Scolaire Good shepherd Kanzana has helped me grow
-                    academically and morally. The teachers are dedicated and
-                    the learning environment encourages excellence and
-                    discipline.
-                  </p>
-                  <p class="name">Deborah A.</p>
-                  <span class="position">Primary Student</span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-wrap text-center">
-                <div class="user-img mb-5" style="background-image: url(images/person_31.jpg)">
-                  <span class="quote d-flex align-items-center justify-content-center">
-                    <i class="icon-quote-left"></i>
-                  </span>
-                </div>
-                <div class="text">
-                  <p class="mb-5">
-                    Groupe Scolaire Good shepherd Kanzana has helped me grow
-                    academically and morally. The teachers are dedicated and
-                    the learning environment encourages excellence and
-                    discipline.
-                  </p>
-                  <p class="name">Grace M.</p>
-                  <span class="position">Final Year Candidate</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section bg-light">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">Our Dedicated Teaching Staff</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 mb-sm-4 ftco-animate">
-          <div class="staff">
-            <div class="d-flex mb-4">
-              <div class="img" style="background-image: url(images/person_32.jpg)"></div>
-              <div class="info ml-4">
-                <h3><a href="teacher-single.html">Mme. Sarah B.</a></h3>
-                <span class="position">CSE Teacher</span>
-                <p class="ftco-social d-flex">
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-twitter"></span></a>
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-facebook"></span></a>
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-instagram"></span></a>
-                </p>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Committed to academic excellence and character development,
-                our teachers guide students with professionalism, integrity
-                and dedication.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-sm-4 ftco-animate">
-          <div class="staff">
-            <div class="d-flex mb-4">
-              <div class="img" style="background-image: url(images/person_33.jpg)"></div>
-              <div class="info ml-4">
-                <h3><a href="teacher-single.html">Mme. Rachel K.</a></h3>
-                <span class="position">Science Teacher</span>
-                <p class="ftco-social d-flex">
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-twitter"></span></a>
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-facebook"></span></a>
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-instagram"></span></a>
-                </p>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Committed to academic excellence and character development,
-                our teachers guide students with professionalism, integrity
-                and dedication.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-sm-4 ftco-animate">
-          <div class="staff">
-            <div class="d-flex mb-4">
-              <div class="img" style="background-image: url(images/person_34.jpg)"></div>
-              <div class="info ml-4">
-                <h3><a href="teacher-single.html">Sarah B</a></h3>
-                <span class="position"> Literature Teacher</span>
-                <p class="ftco-social d-flex">
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-twitter"></span></a>
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-facebook"></span></a>
-                  <a href="#" class="d-flex justify-content-center align-items-center"><span
-                      class="icon-instagram"></span></a>
-                </p>
-              </div>
-            </div>
-            <div class="text">
-              <p>
-                Committed to academic excellence and character development,
-                our teachers guide students with professionalism, integrity
-                and dedication.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-freeTrial">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="your d-flex align-items-center" style="gap: 6px;">
-            <div class="free-trial ftco-animate">
-              <h3>Start Your Child’s Academic Journey With Us</h3>
-              <p>
-                Enroll at Groupe Scolaire Good shepherd Kanzana and provide your
-                child with quality education rooted in discipline, excellence
-                and moral values.
-              </p>
-            </div>
-            <div class="btn-join ftco-animate">
-              <p>
-                <a href="#" class="btn btn-primary py-2 px-4">Apply Today</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">Our Academic Programs</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="course align-self-stretch">
-            <a href="#" class="img" style="background-image: url(images/course-1.jpg)"></a>
-            <div class="text p-4">
-              <p class="category"><span>Nursery</span></p>
-              <h3 class="mb-3"><a href="#">Early Childhood Education</a></h3>
-              <p>
-                A nurturing and stimulating environment designed to develop
-                foundational skills, creativity and social interaction.
-              </p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="course align-self-stretch">
-            <a href="#" class="img" style="background-image: url(images/course-2.jpg)"></a>
-            <div class="text p-4">
-              <p class="category"><span>Primary</span></p>
-              <h3 class="mb-3"><a href="#">Primary Education Program</a></h3>
-              <p>
-                Comprehensive curriculum focused on literacy, numeracy,
-                critical thinking and moral development.
-              </p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="course align-self-stretch">
-            <a href="#" class="img" style="background-image: url(images/course-3.jpg)"></a>
-            <div class="text p-4">
-              <p class="category"><span>Secondary</span></p>
-              <h3 class="mb-3">
-                <a href="#">Secondary Education Program</a>
-              </h3>
-              <p>
-                Rigorous academic training preparing students for national
-                examinations and higher education opportunities.
-              </p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-10 ftco-animate">
-          <p>
-            <strong>At Groupe Scolaire Good shepherd Kanzana,</strong> we believe
-            education is the foundation of personal growth and national
-            development. Our mission is to educate competent, disciplined and
-            responsible citizens.
-          </p>
-          <p>
-            <span>Just Browsing?</span><a href="course.html"> Learn more about our programs</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section bg-light">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">Latest News & Announcements</h2>
-        </div>
-      </div>
-      <div class="row d-flex">
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url(&quot;images/image_1.jpg&quot;)">
-            </a>
-            <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">January 14, 2026</a></div>
-                <div><a href="#">parent</a></div>
-                <div>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                </div>
-              </div>
-              <h3 class="heading mt-3">
-                <a href="#">Parents & Teachers Meeting</a>
-              </h3>
-              <p>
-                Strengthening collaboration between parents and educators for
-                student success.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url(&quot;images/image_2.jpg&quot;)">
-            </a>
-            <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">January 12, 2026</a></div>
-                <div><a href="#">studient</a></div>
-                <div>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                </div>
-              </div>
-              <h3 class="heading mt-3">
-                <a href="#">Outstanding National Exam Results</a>
-              </h3>
-              <p>
-                Our final year students achieved remarkable results in
-                national examinations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url(&quot;images/image_3.jpg&quot;)">
-            </a>
-            <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">January 16, 2026</a></div>
-                <div><a href="#">Admin</a></div>
-                <div>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                </div>
-              </div>
-              <h3 class="heading mt-3">
-                <a href="#">Opening of the 2026 Academic Year</a>
-              </h3>
-              <p>
-                The new academic year officially started with renewed
-                commitment to excellence and discipline.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">Upcoming School Events</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url(&quot;images/event-1.jpg&quot;)">
-            </a>
-            <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2025</a></div>
-                <div><a href="#">Admin</a></div>
-                <div>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                </div>
-              </div>
-              <h3 class="heading mb-4">
-                <a href="#">Inter-School Academic Competition</a>
-              </h3>
-              <p class="time-loc">
-                <span class="mr-2"><i class="icon-clock-o"></i> 08:30AM – 02:00PM</span>
-                <span><i class="icon-map-o"></i> Location: Kanzana Campus</span>
-              </p>
-              <p>
-                Students will participate in competitive academic activities
-                promoting excellence and teamwork.
-              </p>
-              <p>
-                <a href="event.html">Participate <i class="ion-ios-arrow-forward"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry d-flex align-self-stretch flex-column-reverse">
-            <a href="blog-single.html" class="block-20" style="background-image: url(&quot;images/event-2.jpg&quot;)">
-            </a>
-            <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                </div>
-              </div>
-              <h3 class="heading mb-4">
-                <a href="#">Inter-School Academic Competition</a>
-              </h3>
-              <p class="time-loc">
-                <span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span>
-                <span><i class="icon-map-o"></i> Location: Kanzana Campus</span>
-              </p>
-              <p>
-                Students will participate in competitive academic activities
-                promoting excellence and teamwork.
-              </p>
-              <p>
-                <a href="event.html">Participate <i class="ion-ios-arrow-forward"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url(&quot;images/event-3.jpg&quot;)">
-            </a>
-            <div class="text p-4 d-block">
-              <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div>
-                  <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                </div>
-              </div>
-              <h3 class="heading mb-4">
-                <a href="#">Inter-School Academic Competition</a>
-              </h3>
-              <p class="time-loc">
-                <span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span>
-                <span><i class="icon-map-o"></i> Location: Kanzana Campus</span>
-              </p>
-              <p>
-                Students will participate in competitive academic activities
-                promoting excellence and teamwork.
-              </p>
-              <p>
-                <a href="event.html">Participate <i class="ion-ios-arrow-forward"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ftco-section-parallax">
-    <div class="parallax-img d-flex align-items-center">
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
       <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2>Subscribe to Our Newsletter</h2>
-            <p>
-              Stay informed about admissions, academic activities, results and
-              school events.
-            </p>
-            <div class="row d-flex justify-content-center mt-5">
-              <div class="col-md-8">
-                <form action="#" class="subscribe-form">
-                  <div class="form-group d-flex">
-                    <input type="text" class="form-control" placeholder="Enter your email address" />
-                    <input type="submit" value="Subscribe" class="submit px-3" />
-                  </div>
-                </form>
-              </div>
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="./images/pic1.png"
+            alt=""
+            style="width: 30px; height: 50px; object-fit: cover"
+          />
+          <div>GS Good shepherd <br /><small> / Kanzana</small></div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="program.html" class="nav-link">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a href="parten.html" class="nav-link">Parteners</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">News & Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item cta">
+              <a href="#" class="nav-link"><span>Apply</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <div
+      class="hero-wrap"
+      style="
+        background-image: url(images/course-1.jpg);
+        object-fit: cover;
+        background-attachment: fixed;
+      "
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div
+          class="row no-gutters slider-text align-items-center justify-content-center"
+          data-scrollax-parent="true"
+        >
+          <div class="col-md-8 ftco-animate text-center">
+            <h1 class="mb-4">
+              Building Character, Knowledge and Excellence for the Future
+            </h1>
+            <div class="flex flex-col items-center gap-6 md:flex-row md:gap-0">
+              <a href="#" class="btn btn-primary px-4 py-2 my-3"
+                >Apply for Admission</a
+              >
+              <a href="#" class="btn btn-secondary px-4 py-2"
+                >Explore Our Programs</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <footer class="ftco-footer ftco-bg-dark ftco-section img" style="
+    <section class="ftco-search-course">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="courseSearch-wrap d-md-flex flex-column-reverse">
+              <div class="full-wrap d-flex ftco-animate">
+                <div class="one-third order-last p-5">
+                  <span>Looking for a specific level?</span>
+                  <h3>Find Your Educational Path</h3>
+                  <form action="#" class="course-search-form">
+                    <div class="form-group d-flex rounded">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search Nursery, Primary or Secondary level"
+                      />
+                      <input
+                        type="submit"
+                        value="Search"
+                        class="submit"
+                        style="border-radius: 0px"
+                      />
+                    </div>
+                  </form>
+                  <p>
+                    Just Browsing? <a href="#"> View all academic levels</a>
+                  </p>
+                </div>
+                <div
+                  class="one-forth order-first img"
+                  style="background-image: url(images/image_1.jpg)"
+                ></div>
+              </div>
+              <div class="full-wrap ftco-animate">
+                <div class="one-half">
+                  <div class="featured-blog d-md-flex">
+                    <div class="image d-flex order-last">
+                      <a
+                        href="#"
+                        class="img"
+                        style="background: url(images/image_2.jpg)"
+                      ></a>
+                    </div>
+                    <div class="text order-first">
+                      <span class="date">January 15, 2026</span>
+                      <h3>
+                        <a href="#">Annual Academic Excellence Workshop</a>
+                      </h3>
+                      <p>
+                        Groupe Scolaire Good shepherd Kanzana organized its
+                        annual academic workshop to strengthen teaching
+                        strategies and student performance across all levels.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-3 py-4 d-block text-center">
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-3"
+              >
+                <span class="flaticon-exam"></span>
+              </div>
+              <div class="media-body px-3">
+                <h3 class="heading">Admission</h3>
+                <p>
+                  Transparent and structured admission process for Nursery,
+                  Primary and Secondary levels. We ensure equal opportunity and
+                  academic integrity.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-3 py-4 d-block text-center">
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-3"
+              >
+                <span class="flaticon-blackboard"></span>
+              </div>
+              <div class="media-body px-3">
+                <h3 class="heading">Notice Board</h3>
+                <p>
+                  Stay updated with official announcements, examination
+                  schedules, academic calendars and important school
+                  communications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-3 py-4 d-block text-center">
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-3"
+              >
+                <span class="flaticon-books"></span>
+              </div>
+              <div class="media-body px-3">
+                <h3 class="heading">Our Library</h3>
+                <p>
+                  A growing academic library supporting research, reading
+                  culture and intellectual development for all students.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="ftco-section-3 img"
+      style="background-image: url(images/bg_3.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex justify-content-center">
+          <div class="col-md-9 about-video text-center">
+            <h2 class="ftco-animate">
+              Groupe Scolaire Good shepherd Kanzana – Shaping Responsible
+              Leaders
+            </h2>
+            <div class="video d-flex justify-content-center">
+              <a
+                href="#"
+                class="button popup-vimeo d-flex justify-content-center align-items-center"
+                ><span class="ion-ios-play"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-counter bg-light" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
+              <div
+                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18 text-center">
+                  <div class="text">
+                    <strong class="number" data-number="10300">0</strong>
+                    <span>Enrolled Students</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18 text-center">
+                  <div class="text">
+                    <strong class="number" data-number="7896">0</strong>
+                    <span>Graduated Students</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18 text-center">
+                  <div class="text">
+                    <strong class="number" data-number="400">0</strong>
+                    <span>Qualified Teachers</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18 text-center">
+                  <div class="text">
+                    <strong class="number" data-number="200">0</strong>
+                    <span>Academic Levels</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section testimony-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">What Our Student Says</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 ftco-animate">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap text-center">
+                  <div
+                    class="user-img mb-5"
+                    style="background-image: url(images/person_1.jpg)"
+                  >
+                    <span
+                      class="quote d-flex align-items-center justify-content-center"
+                    >
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">
+                      Groupe Scolaire Good shepherd Kanzana has helped me grow
+                      academically and morally. The teachers are dedicated and
+                      the learning environment encourages excellence and
+                      discipline.
+                    </p>
+                    <p class="name">Emmanuel N.</p>
+                    <span class="position">Primary Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center">
+                  <div
+                    class="user-img mb-5"
+                    style="background-image: url(images/person_2.jpg)"
+                  >
+                    <span
+                      class="quote d-flex align-items-center justify-content-center"
+                    >
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">
+                      Groupe Scolaire Good shepherd Kanzana has helped me grow
+                      academically and morally. The teachers are dedicated and
+                      the learning environment encourages excellence and
+                      discipline.
+                    </p>
+                    <p class="name">Dennis G.</p>
+                    <span class="position">Secondary Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center">
+                  <div
+                    class="user-img mb-5"
+                    style="background-image: url(images/person_3.jpg)"
+                  >
+                    <span
+                      class="quote d-flex align-items-center justify-content-center"
+                    >
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">
+                      Groupe Scolaire Good shepherd Kanzana has helped me grow
+                      academically and morally. The teachers are dedicated and
+                      the learning environment encourages excellence and
+                      discipline.
+                    </p>
+                    <p class="name">Deborah A.</p>
+                    <span class="position">Primary Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center">
+                  <div
+                    class="user-img mb-5"
+                    style="background-image: url(images/person_31.jpg)"
+                  >
+                    <span
+                      class="quote d-flex align-items-center justify-content-center"
+                    >
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">
+                      Groupe Scolaire Good shepherd Kanzana has helped me grow
+                      academically and morally. The teachers are dedicated and
+                      the learning environment encourages excellence and
+                      discipline.
+                    </p>
+                    <p class="name">Grace M.</p>
+                    <span class="position">Final Year Candidate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Dedicated Teaching Staff</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-sm-4 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-4">
+                <div
+                  class="img"
+                  style="background-image: url(images/person_32.jpg)"
+                ></div>
+                <div class="info ml-4">
+                  <h3><a href="teacher-single.html">Mme. Sarah B.</a></h3>
+                  <span class="position">CSE Teacher</span>
+                  <p class="ftco-social d-flex">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-twitter"></span
+                    ></a>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-facebook"></span
+                    ></a>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-instagram"></span
+                    ></a>
+                  </p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  Committed to academic excellence and character development,
+                  our teachers guide students with professionalism, integrity
+                  and dedication.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-sm-4 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-4">
+                <div
+                  class="img"
+                  style="background-image: url(images/person_33.jpg)"
+                ></div>
+                <div class="info ml-4">
+                  <h3><a href="teacher-single.html">Mme. Rachel K.</a></h3>
+                  <span class="position">Science Teacher</span>
+                  <p class="ftco-social d-flex">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-twitter"></span
+                    ></a>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-facebook"></span
+                    ></a>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-instagram"></span
+                    ></a>
+                  </p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  Committed to academic excellence and character development,
+                  our teachers guide students with professionalism, integrity
+                  and dedication.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-sm-4 ftco-animate">
+            <div class="staff">
+              <div class="d-flex mb-4">
+                <div
+                  class="img"
+                  style="background-image: url(images/person_34.jpg)"
+                ></div>
+                <div class="info ml-4">
+                  <h3><a href="teacher-single.html">Sarah B</a></h3>
+                  <span class="position"> Literature Teacher</span>
+                  <p class="ftco-social d-flex">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-twitter"></span
+                    ></a>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-facebook"></span
+                    ></a>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      ><span class="icon-instagram"></span
+                    ></a>
+                  </p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  Committed to academic excellence and character development,
+                  our teachers guide students with professionalism, integrity
+                  and dedication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-freeTrial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="your d-flex align-items-center" style="gap: 6px">
+              <div class="free-trial ftco-animate">
+                <h3>Start Your Child’s Academic Journey With Us</h3>
+                <p>
+                  Enroll at Groupe Scolaire Good shepherd Kanzana and provide
+                  your child with quality education rooted in discipline,
+                  excellence and moral values.
+                </p>
+              </div>
+              <div class="btn-join ftco-animate">
+                <p>
+                  <a href="#" class="btn btn-primary py-2 px-4">Apply Today</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Academic Programs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="course align-self-stretch">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/course-1.jpg)"
+              ></a>
+              <div class="text p-4">
+                <p class="category"><span>Nursery</span></p>
+                <h3 class="mb-3"><a href="#">Early Childhood Education</a></h3>
+                <p>
+                  A nurturing and stimulating environment designed to develop
+                  foundational skills, creativity and social interaction.
+                </p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="course align-self-stretch">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/course-2.jpg)"
+              ></a>
+              <div class="text p-4">
+                <p class="category"><span>Primary</span></p>
+                <h3 class="mb-3"><a href="#">Primary Education Program</a></h3>
+                <p>
+                  Comprehensive curriculum focused on literacy, numeracy,
+                  critical thinking and moral development.
+                </p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="course align-self-stretch">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/course-3.jpg)"
+              ></a>
+              <div class="text p-4">
+                <p class="category"><span>Secondary</span></p>
+                <h3 class="mb-3">
+                  <a href="#">Secondary Education Program</a>
+                </h3>
+                <p>
+                  Rigorous academic training preparing students for national
+                  examinations and higher education opportunities.
+                </p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-10 ftco-animate">
+            <p>
+              <strong>At Groupe Scolaire Good shepherd Kanzana,</strong> we
+              believe education is the foundation of personal growth and
+              national development. Our mission is to educate competent,
+              disciplined and responsible citizens.
+            </p>
+            <p>
+              <span>Just Browsing?</span
+              ><a href="course.html"> Learn more about our programs</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Latest News & Announcements</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a
+                href="blog-single.html"
+                class="block-20"
+                style="background-image: url(&quot;images/image_1.jpg&quot;)"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">January 14, 2026</a></div>
+                  <div><a href="#">parent</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+                <h3 class="heading mt-3">
+                  <a href="#">Parents & Teachers Meeting</a>
+                </h3>
+                <p>
+                  Strengthening collaboration between parents and educators for
+                  student success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a
+                href="blog-single.html"
+                class="block-20"
+                style="background-image: url(&quot;images/image_2.jpg&quot;)"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">January 12, 2026</a></div>
+                  <div><a href="#">studient</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+                <h3 class="heading mt-3">
+                  <a href="#">Outstanding National Exam Results</a>
+                </h3>
+                <p>
+                  Our final year students achieved remarkable results in
+                  national examinations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a
+                href="blog-single.html"
+                class="block-20"
+                style="background-image: url(&quot;images/image_3.jpg&quot;)"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">January 16, 2026</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+                <h3 class="heading mt-3">
+                  <a href="#">Opening of the 2026 Academic Year</a>
+                </h3>
+                <p>
+                  The new academic year officially started with renewed
+                  commitment to excellence and discipline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Upcoming School Events</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a
+                href="blog-single.html"
+                class="block-20"
+                style="background-image: url(&quot;images/event-1.jpg&quot;)"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">Sep. 10, 2025</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+                <h3 class="heading mb-4">
+                  <a href="#">Inter-School Academic Competition</a>
+                </h3>
+                <p class="time-loc">
+                  <span class="mr-2"
+                    ><i class="icon-clock-o"></i> 08:30AM – 02:00PM</span
+                  >
+                  <span
+                    ><i class="icon-map-o"></i> Location: Kanzana Campus</span
+                  >
+                </p>
+                <p>
+                  Students will participate in competitive academic activities
+                  promoting excellence and teamwork.
+                </p>
+                <p>
+                  <a href="event.html"
+                    >Participate <i class="ion-ios-arrow-forward"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div
+              class="blog-entry d-flex align-self-stretch flex-column-reverse"
+            >
+              <a
+                href="blog-single.html"
+                class="block-20"
+                style="background-image: url(&quot;images/event-2.jpg&quot;)"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">Sep. 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+                <h3 class="heading mb-4">
+                  <a href="#">Inter-School Academic Competition</a>
+                </h3>
+                <p class="time-loc">
+                  <span class="mr-2"
+                    ><i class="icon-clock-o"></i> 10:30AM-03:30PM</span
+                  >
+                  <span
+                    ><i class="icon-map-o"></i> Location: Kanzana Campus</span
+                  >
+                </p>
+                <p>
+                  Students will participate in competitive academic activities
+                  promoting excellence and teamwork.
+                </p>
+                <p>
+                  <a href="event.html"
+                    >Participate <i class="ion-ios-arrow-forward"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a
+                href="blog-single.html"
+                class="block-20"
+                style="background-image: url(&quot;images/event-3.jpg&quot;)"
+              >
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">Sep. 10, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div>
+                    <a href="#" class="meta-chat"
+                      ><span class="icon-chat"></span> 3</a
+                    >
+                  </div>
+                </div>
+                <h3 class="heading mb-4">
+                  <a href="#">Inter-School Academic Competition</a>
+                </h3>
+                <p class="time-loc">
+                  <span class="mr-2"
+                    ><i class="icon-clock-o"></i> 10:30AM-03:30PM</span
+                  >
+                  <span
+                    ><i class="icon-map-o"></i> Location: Kanzana Campus</span
+                  >
+                </p>
+                <p>
+                  Students will participate in competitive academic activities
+                  promoting excellence and teamwork.
+                </p>
+                <p>
+                  <a href="event.html"
+                    >Participate <i class="ion-ios-arrow-forward"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light pb-0" style="margin-top: -90px">
+      <div class="container-fluid px-0">
+        <div class="row no-gutters">
+          <div
+            class="col-md-12 text-center heading-section ftco-animate mb-4 mt-5"
+          >
+            <h2>Our Location</h2>
+            <p>Visit GS Good Shepherd Kanzana</p>
+          </div>
+
+          <div class="col-md-12">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps?q=Kanzana%20Himbi%20Goma&output=embed"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div
+              class="col-md-7 text-center heading-section heading-section-white ftco-animate"
+            >
+              <h2>Subscribe to Our Newsletter</h2>
+              <p>
+                Stay informed about admissions, academic activities, results and
+                school events.
+              </p>
+              <div class="row d-flex justify-content-center mt-5">
+                <div class="col-md-8">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your email address"
+                      />
+                      <input
+                        type="submit"
+                        value="Subscribe"
+                        class="submit px-3"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="ftco-footer ftco-bg-dark ftco-section img"
+      style="
         background-image: url(images/bg_2.jpg);
         background-attachment: fixed;
-      ">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-3">
-          <div class="ftco-footer-widget mb-4">
-            <h2>
-              <a class="navbar-brand" href="index.html"><img src="./images/pic1.png" alt=""
-                  style="width: 36px; object-fit: cover" /></i>G.S Good shepherd
-                <br /><small>/Kanzana</small></a>
-            </h2>
-            <p>
-              Groupe Scolaire Good shepherd Kanzana is committed to providing
-              quality education that combines academic excellence, discipline
-              and moral values for holistic student development.
-            </p>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Recent Blog</h2>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="#">Academic Excellence Ceremony 2026</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="#"><span class="icon-calendar"></span> July 12, 2025</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-person"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-chat"></span> 19</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="#">New Library Resources Available</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="#"><span class="icon-calendar"></span> July 12, 2025</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-person"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="#"><span class="icon-chat"></span> 10</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="ftco-footer-widget mb-4 ml-md-4">
-            <h2 class="ftco-heading-2">Site Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">Home</a></li>
-              <li><a href="#" class="py-2 d-block">About Us</a></li>
-              <li><a href="#" class="py-2 d-block">Academic Programs</a></li>
-              <li><a href="#" class="py-2 d-block">Partener</a></li>
-              <li><a href="#" class="py-2 d-block">News & Events</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li>
-                  <span class="icon icon-map-marker"></span><span class="text">Kanzana, Himbi/GOMA</span>
+      "
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2>
+                <a
+                  class="navbar-brand"
+                  href="index.html"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                  "
+                >
+                  <img
+                    src="./images/pic1.png"
+                    alt=""
+                    style="width: 30px; height: 50px; object-fit: cover"
+                  />
+                  <div>GS Good shepherd <br /><small> / Kanzana</small></div>
+                </a>
+              </h2>
+              <p>
+                Groupe Scolaire Good shepherd Kanzana is committed to providing
+                quality education that combines academic excellence, discipline
+                and moral values for holistic student development.
+              </p>
+              <ul
+                class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
+              >
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
                 </li>
-                <li>
-                  <a href="#"><span class="icon icon-phone"></span><span class="text">+243 9987356211</span></a>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
                 </li>
-                <li>
-                  <a href="#"><span class="icon icon-envelope"></span><span class="text">jovin3@gmail.com</span></a>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-instagram"></span></a>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a
+                  class="blog-img mr-4"
+                  style="background-image: url(images/image_1.jpg)"
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">Academic Excellence Ceremony 2026</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> July 12, 2025</a
+                      >
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-person"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-chat"></span> 19</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a
+                  class="blog-img mr-4"
+                  style="background-image: url(images/image_2.jpg)"
+                ></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">New Library Resources Available</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="#"
+                        ><span class="icon-calendar"></span> July 12, 2025</a
+                      >
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-person"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="#"><span class="icon-chat"></span> 10</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Home</a></li>
+                <li><a href="#" class="py-2 d-block">About Us</a></li>
+                <li><a href="#" class="py-2 d-block">Academic Programs</a></li>
+                <li><a href="#" class="py-2 d-block">Partener</a></li>
+                <li><a href="#" class="py-2 d-block">News & Events</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text">Kanzana, Himbi/GOMA</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon icon-phone"></span
+                      ><span class="text">+243 9987356211</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text">jovin3@gmail.com</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              © [Current Year] Groupe Scolaire Good shepherd Kanzana. All rights
+              reserved.
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            © [Current Year] Groupe Scolaire Good shepherd Kanzana. All rights
-            reserved.
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <!-- loader -->
     <div id="cephas" class="fullscreen show">
-        <img src="images/pic1.png" alt="Logo" class="logo-loader" />
+      <img src="images/pic1.png" alt="Logo" class="logo-loader" />
     </div>
 
     <script>
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                const loader = document.getElementById("cephas");
-                loader.style.opacity = "0";
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          const loader = document.getElementById("cephas");
+          loader.style.opacity = "0";
 
-                setTimeout(function () {
-                    loader.style.display = "none";
-                }, 800);
-            }, 2000);
-        });
+          setTimeout(function () {
+            loader.style.display = "none";
+          }, 800);
+        }, 2000);
+      });
     </script>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
