@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Contact Us - GS Good Shepherd Kanzana</title>
+    <title>Contact - GS Good Shepherd</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./images/pic1.png" />
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -28,28 +27,23 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
-      .contact-card {
-        background: #fff;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 0;
+        position: relative;
+        height: 450px;
       }
-
-      .contact-info-box {
-        background: #0d1128;
-        color: white;
-        padding: 40px;
-        border-radius: 10px;
+      .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
       }
-
-      .btn-primary {
-        background: #0d1128;
-        border: none;
-      }
-
-      .btn-primary:hover {
-        background: #1c2354;
+      @media (max-width: 768px) {
+        .map-responsive {
+          height: 300px;
+        }
       }
     </style>
   </head>
@@ -64,12 +58,7 @@
         <a
           class="navbar-brand"
           href="index.html"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-          "
+          style="display: flex; align-items: center; gap: 8px"
         >
           <img
             src="./images/pic1.png"
@@ -83,16 +72,12 @@
           type="button"
           data-toggle="collapse"
           data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="oi oi-menu"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
@@ -107,8 +92,8 @@
             <li class="nav-item">
               <a href="news.html" class="nav-link">News & Events</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+            <li class="nav-item active">
+              <a href="contact.html" class="nav-link">Contact</a>
             </li>
             <li class="nav-item cta">
               <a href="#" class="nav-link"><span>Apply</span></a>
@@ -117,139 +102,123 @@
         </div>
       </div>
     </nav>
+    <!-- END NAVBAR -->
 
-    <!-- HERO -->
-    <section
-      class="hero-wrap hero-wrap-2"
-      style="background-image: url(&quot;images/bg_2.jpg&quot;)"
+    <!-- HERO SECTION -->
+    <div
+      class="hero-wrap"
+      style="
+        background-image: url(images/bg_1.jpg);
+        background-attachment: fixed;
+      "
     >
       <div class="overlay"></div>
       <div class="container">
         <div
           class="row no-gutters slider-text align-items-center justify-content-center"
         >
-          <div class="col-md-9 text-center ftco-animate">
-            <h1 class="mb-2">Contact Us</h1>
-            <p class="breadcrumbs">
-              <span class="mr-2"><a href="index.html">Home</a></span>
-              <span>Contact</span>
+          <div class="col-md-8 ftco-animate text-center">
+            <h1 class="mb-4">Get In Touch With Us</h1>
+            <p>
+              We are here to answer your questions and provide information about
+              our school programs.
             </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- CONTACT SECTION -->
-    <section class="ftco-section">
+    <!-- CONTACT FORM SECTION -->
+    <section class="ftco-section contact-section bg-light">
       <div class="container">
-        <div class="row">
-          <!-- FORM -->
-          <div class="col-md-7 ftco-animate">
-            <div class="contact-card">
-              <h3 class="mb-4">Send Us a Message</h3>
-
-              <form action="send-message.php" method="POST">
-                <div class="form-group">
-                  <label>Full Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>Subject</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>Message</label>
-                  <textarea
-                    name="message"
-                    rows="6"
-                    class="form-control"
-                    required
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary px-4 py-2">
-                  Send Message
-                </button>
-              </form>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-4 ftco-animate">
+            <div class="info bg-white p-4">
+              <p><span>Address:</span> Kanzana, Himbi/GOMA</p>
             </div>
           </div>
-
-          <!-- CONTACT INFO -->
-          <div class="col-md-5 ftco-animate">
-            <div class="contact-info-box">
-              <h3>Institutional Contact Information</h3>
-              <hr style="background: white" />
-
+          <div class="col-md-4 ftco-animate">
+            <div class="info bg-white p-4">
               <p>
-                <strong>Address:</strong><br />
-                Kanzana, Himbi – Goma<br />
-                Democratic Republic of Congo
+                <span>Phone:</span>
+                <a href="tel:+2439987356211">+243 9987356211</a>
               </p>
-
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="info bg-white p-4">
               <p>
-                <strong>Phone:</strong><br />
-                +243 9987356211
-              </p>
-
-              <p>
-                <strong>Email:</strong><br />
-                info@gsgoodkanzana.org
-              </p>
-
-              <p>
-                <strong>Office Hours:</strong><br />
-                Monday – Friday<br />
-                8:00 AM – 4:00 PM
-              </p>
-
-              <p>
-                For institutional partnerships, funding proposals, or admissions
-                inquiries, please contact the administration office directly.
+                <span>Email:</span>
+                <a href="mailto:jovin3@gmail.com">jovin3@gmail.com</a>
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- MAP SECTION -->
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <h3 class="text-center mb-4">Our Location</h3>
-
-        <div class="row">
-          <div class="col-md-12">
-            <iframe
-              src="https://maps.google.com/maps?q=Goma&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="400"
-              style="border: 0; border-radius: 10px"
-              allowfullscreen=""
-              loading="lazy"
-            >
-            </iframe>
+        <div class="row block-9">
+          <div class="col-md-6 ftco-animate">
+            <form action="#" class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="7"
+                  class="form-control"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="btn btn-primary py-2 px-4"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 ftco-animate">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps?q=Kanzana%20Himbi%20Goma&output=embed"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -414,7 +383,19 @@
     </footer>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
