@@ -1,17 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Our Partners - GS Good Shepherd Kanzana</title>
+    <title>News & Events - GS Good Shepherd Kanzana</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="./images/pic1.png" />
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
@@ -28,25 +22,32 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
-      .partner-card {
+      .news-card {
         background: #fff;
-        padding: 40px 30px;
         border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         transition: 0.3s ease;
         height: 100%;
       }
 
-      .partner-card:hover {
+      .news-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
       }
 
-      .partner-logo {
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        margin-bottom: 20px;
+      .news-img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .event-box {
+        background: #f8f9fa;
+        padding: 30px;
+        border-left: 4px solid #0d1128;
+        margin-bottom: 25px;
+        border-radius: 8px;
       }
 
       .cta-section {
@@ -58,221 +59,158 @@
   </head>
 
   <body>
-    <!-- NAVBAR (INCHANGÉE) -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-      id="ftco-navbar"
-    >
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a
-          class="navbar-brand"
-          href="index.html"
-          style="display: flex; align-items: center; gap: 8px"
-        >
-          <img
-            src="./images/pic1.png"
-            style="width: 30px; height: 50px; object-fit: cover"
-          />
-          <div>GS Good shepherd <br /><small>/ Kanzana</small></div>
+        <a class="navbar-brand" href="index.html" style="display:flex;align-items:center;gap:8px;">
+          <img src="./images/pic1.png" style="width:30px;height:50px;object-fit:cover"/>
+          <div>GS Good Shepherd <br/><small>/ Kanzana</small></div>
         </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
           <span class="oi oi-menu"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="program.html" class="nav-link">Programs</a>
-            </li>
-            <li class="nav-item active">
-              <a href="parten.html" class="nav-link">Parteners</a>
-            </li>
-            <li class="nav-item">
-              <a href="./news.html" class="nav-link">News & Events</a>
-            </li>
-            <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item cta">
-              <a href="#" class="nav-link"><span>Apply</span></a>
-            </li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="program.html" class="nav-link">Programs</a></li>
+            <li class="nav-item"><a href="parten.html" class="nav-link">Partners</a></li>
+            <li class="nav-item active"><a href="news.html" class="nav-link">News & Events</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item cta"><a href="#" class="nav-link"><span>Apply</span></a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- HERO -->
-    <section
-      class="hero-wrap hero-wrap-2"
-      style="background-image: url(&quot;images/bg_2.jpg&quot;)"
-    >
+    <section class="hero-wrap hero-wrap-2" style="background-image:url('images/bg_2.jpg');">
       <div class="overlay"></div>
       <div class="container">
-        <div
-          class="row no-gutters slider-text align-items-center justify-content-center"
-        >
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 text-center ftco-animate">
-            <h1>Investment Projects</h1>
+            <h1 class="mb-2">News & Events</h1>
+            <p class="breadcrumbs">
+              <span class="mr-2"><a href="index.html">Home</a></span>
+              <span>News & Events</span>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="ftco-section">
-      <div class="container text-center">
-        <h2>Sustainable Production & Revenue Model</h2>
-        <p>
-          GS Good Shepherd Kanzana is implementing structured agricultural and
-          livestock initiatives designed to strengthen food security, generate
-          institutional income, and provide hands-on vocational training for
-          students.
-        </p>
-      </div>
-    </section>
-
-    <!-- WHY INVEST -->
-    <section class="ftco-section bg-light">
-      <div class="container text-center">
-        <h2>Why Invest With Us?</h2>
-        <div class="row mt-4">
-          <div class="col-md-3"><h5>Structured Governance</h5></div>
-          <div class="col-md-3"><h5>Revenue-Oriented Model</h5></div>
-          <div class="col-md-3"><h5>Educational Integration</h5></div>
-          <div class="col-md-3"><h5>Long-Term Sustainability</h5></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
+    <!-- NEWS SECTION -->
     <section class="ftco-section">
       <div class="container">
-        <!-- PROJECT 1 -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="images/event-3.jpg" class="img-fluid rounded shadow" />
-          </div>
-          <div class="col-md-6">
-            <h3>🌽 Agricultural Production Program</h3>
-            <ul>
-              <li><strong>Land Area:</strong> 3 hectares</li>
-              <li><strong>Investment Required:</strong> $18,000</li>
-              <li><strong>Status:</strong> Land prepared</li>
-              <li><strong>Projected Cost Reduction:</strong> 25%</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary investment-btn">
-              Request Detailed Investment Proposal
-            </a>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 heading-section text-center ftco-animate">
+            <h2>Latest News</h2>
+            <p>Official updates and institutional developments from Groupe Scolaire Good Shepherd Kanzana.</p>
           </div>
         </div>
 
-        <!-- PROJECT 2 -->
-        <div class="row align-items-center mb-5 flex-md-row-reverse">
-          <div class="col-md-6">
-            <img src="images/event-1.jpg" class="img-fluid rounded shadow" />
-          </div>
-          <div class="col-md-6">
-            <h3>🐄 Livestock Development Initiative</h3>
-            <ul>
-              <li><strong>10 Dairy Cows</strong></li>
-              <li><strong>50 Goats</strong></li>
-              <li><strong>Investment Required:</strong> $25,000</li>
-              <li><strong>Status:</strong> Planning Phase</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary investment-btn">
-              Request Detailed Investment Proposal
-            </a>
-          </div>
-        </div>
+        <div class="row">
 
-        <!-- PROJECT 3 -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="images/event-4.jpg" class="img-fluid rounded shadow" />
+          <!-- NEWS 1 -->
+          <div class="col-md-4 ftco-animate">
+            <div class="news-card">
+              <img src="images/image_1.jpg" class="news-img" alt="">
+              <div class="p-4">
+                <h4>Academic Excellence Awards 2026</h4>
+                <p><strong>Date:</strong> July 12, 2026</p>
+                <p>
+                  Recognition ceremony honoring outstanding student performance and commitment to academic discipline.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h3>🐔 Poultry Production Unit</h3>
-            <ul>
-              <li><strong>Capacity:</strong> 500 hens</li>
-              <li><strong>Investment Required:</strong> $9,500</li>
-              <li><strong>Status:</strong> Ready for Implementation</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary investment-btn">
-              Request Detailed Investment Proposal
-            </a>
+
+          <!-- NEWS 2 -->
+          <div class="col-md-4 ftco-animate">
+            <div class="news-card">
+              <img src="images/image_2.jpg" class="news-img" alt="">
+              <div class="p-4">
+                <h4>Launch of Agricultural Development Program</h4>
+                <p><strong>Date:</strong> June 18, 2026</p>
+                <p>
+                  Official preparation phase of the school-based agricultural production initiative aimed at improving food security.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <!-- NEWS 3 -->
+          <div class="col-md-4 ftco-animate">
+            <div class="news-card">
+              <img src="images/image_3.jpg" class="news-img" alt="">
+              <div class="p-4">
+                <h4>New Science Laboratory Equipment</h4>
+                <p><strong>Date:</strong> May 30, 2026</p>
+                <p>
+                  Installation of modern laboratory tools to enhance practical science education.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- FINANCIAL PROJECTION -->
+    <!-- EVENTS SECTION -->
     <section class="ftco-section bg-light">
-      <div class="container text-center">
-        <h2>3-Year Financial Projection</h2>
-        <div class="table-responsive mt-4">
-          <table class="table table-bordered financial-table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Projected Revenue</th>
-                <th>Operational Cost</th>
-                <th>Net Surplus</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Year 1</td>
-                <td>$22,000</td>
-                <td>$15,000</td>
-                <td>$7,000</td>
-              </tr>
-              <tr>
-                <td>Year 2</td>
-                <td>$32,000</td>
-                <td>$18,000</td>
-                <td>$14,000</td>
-              </tr>
-              <tr>
-                <td>Year 3</td>
-                <td>$45,000</td>
-                <td>$22,000</td>
-                <td>$23,000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section
-      class="ftco-section text-center"
-      style="background: #0d1128; color: white"
-    >
       <div class="container">
-        <h2>Download Complete Investment Proposal</h2>
-        <p>
-          Full business plan and financial documentation available upon request.
-        </p>
-        <a href="contact.html" class="btn btn-light px-4 py-3 mt-3">
-          Contact Administration Office
-        </a>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 heading-section text-center ftco-animate">
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+
+        <div class="event-box ftco-animate">
+          <h4>Annual School Conference</h4>
+          <p><strong>Date:</strong> September 15, 2026</p>
+          <p>
+            Institutional strategic meeting with parents, partners, and community stakeholders to discuss performance and development plans.
+          </p>
+        </div>
+
+        <div class="event-box ftco-animate">
+          <h4>Livestock Project Groundbreaking Ceremony</h4>
+          <p><strong>Date:</strong> October 10, 2026</p>
+          <p>
+            Official launch of the livestock infrastructure development initiative.
+          </p>
+        </div>
+
+        <div class="event-box ftco-animate">
+          <h4>Inter-School Academic Competition</h4>
+          <p><strong>Date:</strong> November 5, 2026</p>
+          <p>
+            Competitive academic event promoting excellence and intellectual growth among regional schools.
+          </p>
+        </div>
+
       </div>
     </section>
 
-    <footer
+    <!-- CTA -->
+    <section class="cta-section text-center">
+      <div class="container">
+        <h2>Stay Connected With Our Institution</h2>
+        <p class="mb-4">
+          For partnerships, sponsorship opportunities, or participation in our events, please contact our administrative office.
+        </p>
+        <a href="contact.html" class="btn btn-primary px-4 py-3">Contact Administration</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+      <footer
       class="ftco-footer ftco-bg-dark ftco-section img"
       style="
         background-image: url(images/bg_2.jpg);
@@ -380,11 +318,11 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Site Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Home</a></li>
-                <li><a href="#" class="py-2 d-block">About Us</a></li>
-                <li><a href="#" class="py-2 d-block">Academic Programs</a></li>
-                <li><a href="#" class="py-2 d-block">Partener</a></li>
-                <li><a href="#" class="py-2 d-block">News & Events</a></li>
+                <li><a href="./index.html" class="py-2 d-block">Home</a></li>
+                <li><a href="./about.html" class="py-2 d-block">About Us</a></li>
+                <li><a href="./program.html" class="py-2 d-block">Academic Programs</a></li>
+                <li><a href="./parten.html" class="py-2 d-block">Parteners</a></li>
+                <li><a href="./news.html" class="py-2 d-block">News & Events</a></li>
               </ul>
             </div>
           </div>
@@ -444,5 +382,6 @@
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>

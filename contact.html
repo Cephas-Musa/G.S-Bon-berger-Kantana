@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Our Partners - GS Good Shepherd Kanzana</title>
+    <title>Contact Us - GS Good Shepherd Kanzana</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -28,37 +28,34 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
-      .partner-card {
+      .contact-card {
         background: #fff;
-        padding: 40px 30px;
+        padding: 40px;
         border-radius: 10px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-        transition: 0.3s ease;
+      }
+
+      .contact-info-box {
+        background: #0d1128;
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
         height: 100%;
       }
 
-      .partner-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-      }
-
-      .partner-logo {
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        margin-bottom: 20px;
-      }
-
-      .cta-section {
+      .btn-primary {
         background: #0d1128;
-        color: white;
-        padding: 80px 0;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background: #1c2354;
       }
     </style>
   </head>
 
   <body>
-    <!-- NAVBAR (INCHANGÉE) -->
+    <!-- NAVBAR -->
     <nav
       class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
       id="ftco-navbar"
@@ -67,27 +64,35 @@
         <a
           class="navbar-brand"
           href="index.html"
-          style="display: flex; align-items: center; gap: 8px"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+          "
         >
           <img
             src="./images/pic1.png"
+            alt=""
             style="width: 30px; height: 50px; object-fit: cover"
           />
-          <div>GS Good shepherd <br /><small>/ Kanzana</small></div>
+          <div>GS Good shepherd <br /><small> / Kanzana</small></div>
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="oi oi-menu"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
@@ -96,14 +101,14 @@
             <li class="nav-item">
               <a href="program.html" class="nav-link">Programs</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="parten.html" class="nav-link">Parteners</a>
             </li>
             <li class="nav-item">
-              <a href="./news.html" class="nav-link">News & Events</a>
+              <a href="news.html" class="nav-link">News & Events</a>
             </li>
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">Contact</a>
             </li>
             <li class="nav-item cta">
               <a href="#" class="nav-link"><span>Apply</span></a>
@@ -124,154 +129,133 @@
           class="row no-gutters slider-text align-items-center justify-content-center"
         >
           <div class="col-md-9 text-center ftco-animate">
-            <h1>Investment Projects</h1>
+            <h1 class="mb-2">Contact Us</h1>
+            <p class="breadcrumbs">
+              <span class="mr-2"><a href="index.html">Home</a></span>
+              <span>Contact</span>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="ftco-section">
-      <div class="container text-center">
-        <h2>Sustainable Production & Revenue Model</h2>
-        <p>
-          GS Good Shepherd Kanzana is implementing structured agricultural and
-          livestock initiatives designed to strengthen food security, generate
-          institutional income, and provide hands-on vocational training for
-          students.
-        </p>
-      </div>
-    </section>
-
-    <!-- WHY INVEST -->
-    <section class="ftco-section bg-light">
-      <div class="container text-center">
-        <h2>Why Invest With Us?</h2>
-        <div class="row mt-4">
-          <div class="col-md-3"><h5>Structured Governance</h5></div>
-          <div class="col-md-3"><h5>Revenue-Oriented Model</h5></div>
-          <div class="col-md-3"><h5>Educational Integration</h5></div>
-          <div class="col-md-3"><h5>Long-Term Sustainability</h5></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
+    <!-- CONTACT SECTION -->
     <section class="ftco-section">
       <div class="container">
-        <!-- PROJECT 1 -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="images/event-3.jpg" class="img-fluid rounded shadow" />
-          </div>
-          <div class="col-md-6">
-            <h3>🌽 Agricultural Production Program</h3>
-            <ul>
-              <li><strong>Land Area:</strong> 3 hectares</li>
-              <li><strong>Investment Required:</strong> $18,000</li>
-              <li><strong>Status:</strong> Land prepared</li>
-              <li><strong>Projected Cost Reduction:</strong> 25%</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary investment-btn">
-              Request Detailed Investment Proposal
-            </a>
-          </div>
-        </div>
+        <div class="row">
+          <!-- FORM -->
+          <div class="col-md-7 ftco-animate">
+            <div class="contact-card">
+              <h3 class="mb-4">Send Us a Message</h3>
 
-        <!-- PROJECT 2 -->
-        <div class="row align-items-center mb-5 flex-md-row-reverse">
-          <div class="col-md-6">
-            <img src="images/event-1.jpg" class="img-fluid rounded shadow" />
-          </div>
-          <div class="col-md-6">
-            <h3>🐄 Livestock Development Initiative</h3>
-            <ul>
-              <li><strong>10 Dairy Cows</strong></li>
-              <li><strong>50 Goats</strong></li>
-              <li><strong>Investment Required:</strong> $25,000</li>
-              <li><strong>Status:</strong> Planning Phase</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary investment-btn">
-              Request Detailed Investment Proposal
-            </a>
-          </div>
-        </div>
+              <form action="send-message.php" method="POST">
+                <div class="form-group">
+                  <label>Full Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    required
+                  />
+                </div>
 
-        <!-- PROJECT 3 -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="images/event-4.jpg" class="img-fluid rounded shadow" />
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary px-4 py-2">
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h3>🐔 Poultry Production Unit</h3>
-            <ul>
-              <li><strong>Capacity:</strong> 500 hens</li>
-              <li><strong>Investment Required:</strong> $9,500</li>
-              <li><strong>Status:</strong> Ready for Implementation</li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary investment-btn">
-              Request Detailed Investment Proposal
-            </a>
+
+          <!-- CONTACT INFO -->
+          <div class="col-md-5 ftco-animate">
+            <div class="contact-info-box">
+              <h3>Institutional Contact Information</h3>
+              <hr style="background: white" />
+
+              <p>
+                <strong>Address:</strong><br />
+                Kanzana, Himbi – Goma<br />
+                Democratic Republic of Congo
+              </p>
+
+              <p>
+                <strong>Phone:</strong><br />
+                +243 9987356211
+              </p>
+
+              <p>
+                <strong>Email:</strong><br />
+                info@gsgoodkanzana.org
+              </p>
+
+              <p>
+                <strong>Office Hours:</strong><br />
+                Monday – Friday<br />
+                8:00 AM – 4:00 PM
+              </p>
+
+              <p>
+                For institutional partnerships, funding proposals, or admissions
+                inquiries, please contact the administration office directly.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FINANCIAL PROJECTION -->
+    <!-- MAP SECTION -->
     <section class="ftco-section bg-light">
-      <div class="container text-center">
-        <h2>3-Year Financial Projection</h2>
-        <div class="table-responsive mt-4">
-          <table class="table table-bordered financial-table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Projected Revenue</th>
-                <th>Operational Cost</th>
-                <th>Net Surplus</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Year 1</td>
-                <td>$22,000</td>
-                <td>$15,000</td>
-                <td>$7,000</td>
-              </tr>
-              <tr>
-                <td>Year 2</td>
-                <td>$32,000</td>
-                <td>$18,000</td>
-                <td>$14,000</td>
-              </tr>
-              <tr>
-                <td>Year 3</td>
-                <td>$45,000</td>
-                <td>$22,000</td>
-                <td>$23,000</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="container">
+        <h3 class="text-center mb-4">Our Location</h3>
+
+        <div class="row">
+          <div class="col-md-12">
+            <iframe
+              src="https://maps.google.com/maps?q=Goma&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 10px"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
-    <section
-      class="ftco-section text-center"
-      style="background: #0d1128; color: white"
-    >
-      <div class="container">
-        <h2>Download Complete Investment Proposal</h2>
-        <p>
-          Full business plan and financial documentation available upon request.
-        </p>
-        <a href="contact.html" class="btn btn-light px-4 py-3 mt-3">
-          Contact Administration Office
-        </a>
-      </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer
       class="ftco-footer ftco-bg-dark ftco-section img"
       style="
@@ -430,19 +414,7 @@
     </footer>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
